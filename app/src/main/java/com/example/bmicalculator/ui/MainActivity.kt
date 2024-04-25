@@ -17,32 +17,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-/*
-* val navController = rememberNavController()
-            val navGraph = navController.createGraph(
-                startDestination = "Main"
-            ) {
-                composable(ScreenState.MAIN.name) {
-                    Surface(
-                        modifier = Modifier.fillMaxSize(),
-                        color = MaterialTheme.colorScheme.background
-                    ) {
-                        BMIMain(viewModel)//별도의 클래스 파일을 만들어서 구현
-                    }
-                }
-                composable(ScreenState.RESULT.name) {
-                    BMIResult(viewModel) {
-                        navController.navigate("Main")
-                    }
-                }
-            }
-            *
-            * NavHost(navController = navController, graph = navGraph)
-
-            LaunchedEffect(true) {
-                viewModel.result.collect {
-                    if (it != BMIState.UNKNOWN) navController.navigate(ScreenState.RESULT.name)
-                }
-            }
-* */

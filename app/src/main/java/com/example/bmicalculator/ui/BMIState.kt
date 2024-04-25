@@ -33,21 +33,3 @@ sealed class Screen(val route: String) {
         fun createRoute(result: String) = "result/$result"
     }
 }
-//data class MainUiState(
-//
-//)
-
-/*@Composable
-fun rememberBMIAppState(
-    navController: NavController = rememberNavController(),
-    context: Context = LocalContext.current
-) = remember(navController, context) {
-    BMIAppState(navController, context)
-}
-
-class BMIAppState(
-    val navController: NavController,
-    private val context: Context,
-) {
-
-}*/

@@ -19,14 +19,3 @@ class BMIViewModel: ViewModel() {
         }
     }
 }
-
-//when {
-//                    result >= 35 -> BMIState.SEVERE
-//                    result >= 30 -> BMIState.OBESITY
-//                    result >= 23 -> BMIState.OVER
-//                    result >= 18.5 -> BMIState.STANDARD
-//                    result < 18.5 -> BMIState.UNDER
-//                    else -> BMIState.UNKNOWN
-//                }.apply {
-//                    data = String.format("%.1f", result)
-//                }
